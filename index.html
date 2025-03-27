@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Book Library</h1>
+
+      <!-- Controls (Search, Sort, View Toggle) -->
+      <div class="controls">
+        <input
+          type="text"
+          id="search"
+          placeholder="Search by title or author..."
+          oninput="filterBooks()"
+        />
+
+        <select id="sort" onchange="sortBooks()">
+          <option value="">Sort By</option>
+          <option value="title">Title (A-Z)</option>
+          <option value="date">Published Date</option>
+        </select>
+
+        <button id="toggleView" onclick="toggleView()">Switch to Grid</button>
+      </div>
+
+      <!-- Book List/Grid Container -->
+      <div id="book-container" class="list-view"></div>
+
+      <!-- Loading Indicator -->
+      <div id="loading">Loading...</div>
+
+      <!-- Pagination Controls -->
+      <div id="pagination">
+        <button id="prevBtn" onclick="prevPage()">Previous</button>
+        <span id="pageNumber">Page: 1</span>
+        <button id="nextBtn" onclick="nextPage()">Next</button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

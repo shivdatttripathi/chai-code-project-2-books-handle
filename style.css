@@ -1,0 +1,117 @@
+/* Basic page styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #f4f4f4;
+}
+
+/* Main container */
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Page title */
+h1 {
+  text-align: center;
+}
+
+/* Controls section (search, sort, toggle) */
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#search,
+#sort,
+#toggleView {
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* Book container */
+#book-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Grid view - shows books in 3 columns */
+#book-container.grid-view {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+/* Book card */
+.book {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: white;
+  transition: 0.3s ease-in-out;
+}
+
+/* Grid view - stacks content vertically */
+.grid-view .book {
+  flex-direction: column;
+  text-align: center;
+}
+
+/* Book images */
+.book img {
+  width: 80px;
+  height: 120px;
+  object-fit: cover;
+}
+
+/* Book details section */
+.book .details {
+  flex: 1;
+}
+
+/* Book links */
+.book a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* Loading indicator */
+#loading {
+  text-align: center;
+  padding: 10px;
+  display: none;
+}
+
+/* Pagination controls */
+#pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#pagination button {
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+  background: #007bff;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+#pagination button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
