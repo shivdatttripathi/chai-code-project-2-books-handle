@@ -162,7 +162,8 @@ function renderBooks() {
 
 function filterBooks() {
   const query = document.getElementById("search").value.toLowerCase();
-  filteredBooks = books.filter((book) => {
+  console.log(books);
+  filteredBooks = books.data.filter((book) => {
     const title = book.volumeInfo?.title?.toLowerCase() || "";
     const authors = book.volumeInfo?.authors?.join(", ").toLowerCase() || "";
     return title.includes(query) || authors.includes(query);
