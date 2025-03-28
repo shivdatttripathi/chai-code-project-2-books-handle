@@ -48,8 +48,11 @@ The current page number is displayed between the buttons.
 
 ## 🖼 Screenshots
 
-📌 **Grid View** – _Coming Soon!_  
-📌 **List View** – _Coming Soon!_
+📌 **Grid View** – ![alt text](image-1.png)  
+📌 **List View** – ![alt grid](image.png)
+📌 **Search** – ![alt text](image-2.png)
+📌 **next prev** – ![alt text](image-4.png)
+📌 **sort** – ![alt text](image-5.png)
 
 ## 📂 Folder Structure
 
@@ -60,3 +63,5 @@ The current page number is displayed between the buttons.
 └── 📄 README.md        # Project documentation
 
 ```
+
+## project Link
